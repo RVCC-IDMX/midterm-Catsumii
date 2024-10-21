@@ -1,13 +1,96 @@
 /* Styles for Mobile Site */
 
+body {
+    background-color: #F6E1FA;
+    color:#C58EFA;
+}
+
 /* Header & Hero */
+header {
+    text-align: center;
+}
+
+header h1 {
+    font-size: 4.5em;
+    border-style: outset;
+    border-color: #FA93DC;
+}
+
+#hero {
+    text-align: center;
+    font-weight: bold;
+    border: 3px solid #FA93DC;
+}
+
+#hero img {
+    width: 350px;
+    padding: 8px;
+    border-radius: 55%;
+}
 
 /* Projects */
 
+#projects h1 {
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+
+}
+
+#projects h2 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+#projects img {
+    max-width: 100%;
+}
+
+
+.description {
+    display: flex;
+    padding: 1em;
+    align-items:center;
+    border: #ECA6FA;
+    border-style:double;
+}
+
+.project {
+    text-align:center;
+}
+
+.project img{
+    width: 400px;
+    border:#ECA6FA;
+    border-style: ridge;
+    display:grid;
+}
+
 /* Reviews */
 
-/* Footer */
+#reviews h1{
+    font-size: 2.5em;
+    text-align: center;
+    text-decoration: underline;
+}
 
+.review {
+    margin: 1em;
+    padding: 1em;
+    border-color: #C58EFA;
+    border-style: ridge;
+    background-color: #C9BEFA;
+    font-weight: bold;
+    line-height: 0%;
+}
+
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #FA93DC;
+    color: #F6E1FA;
+}
 
 /* Media state for Desktop site */
 @media (min-width: 1000px) {
@@ -15,6 +98,11 @@
     /* Header & Hero */
 
     /* Projects */
+    .project {
+        display: grid;
+        grid-template-columns: 2fr 2fr 2fr;
+        padding: 1em;
+    }
 
     /* Reviews */
 
